@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <meta name="description" content="LAMIEN DIGITAL – Expert en solutions informatiques au Burkina Faso."/>
+  <title>LAMIEN DIGITAL | Expert Informatique Burkina Faso</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- ═══ NAV ═══ -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a class="logo" href="#accueil">
+      <div class="logo-mark">LD</div>
+      <div class="logo-name">LAMIEN <span>DIGITAL</span></div>
+    </a>
+    <ul class="nav-center">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#produits">Boutique</a></li>
+      <li><a href="#tarifs">Tarifs</a></li>
+      <li><a href="#temoignages">Avis</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+    <div class="nav-right">
+      <a class="nav-phone" href="tel:+22655757299">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013 5.18 2 2 0 015.11 3h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L9.09 10.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+        </svg>
+        +226 55 75 72 99
+      </a>
+      <a class="nav-btn" href="#contact">Devis gratuit</a>
+    </div>
+    <button class="hamburger" id="hbg" onclick="toggleNav()">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mob-menu" id="mobMenu">
+  <a href="#services"     onclick="closeNav()">Services</a>
+  <a href="#produits"     onclick="closeNav()">Boutique</a>
+  <a href="#tarifs"       onclick="closeNav()">Tarifs</a>
+  <a href="#temoignages"  onclick="closeNav()">Avis clients</a>
+  <a href="#faq"          onclick="closeNav()">FAQ</a>
+  <a href="tel:+22655757299" onclick="closeNav()">📞 +226 55 75 72 99</a>
+  <a href="#contact" onclick="closeNav()" class="mob-cta">Devis gratuit →</a>
+</div>
+
+<!-- ═══ HERO ═══ -->
+<section class="hero" id="accueil">
+  <div class="hero-bg">
+    <div class="hero-glow-1"></div>
+    <div class="hero-glow-2"></div>
+    <div class="hero-grid"></div>
+  </div>
+  <div class="hero-inner">
+    <div class="hero-left">
+      <div class="hero-pill">
+        <span class="pill-dot"></span>
+        Disponible 7j/7 · Ouagadougou, Burkina Faso 🇧🇫
+      </div>
+      <h1>Solutions <em>informatiques</em> rapides et professionnelles</h1>
+      <p class="hero-desc">
+        Maintenance, réparation, cybersécurité, création de sites web et vente de matériel.
+        Votre partenaire numérique de confiance.
+      </p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn-hero-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>
+          </svg>
+          Demander un devis
+        </a>
+        <a href="tel:+22655757299" class="btn-hero-ghost">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013 5.18 2 2 0 015.11 3h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L9.09 10.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+          </svg>
+          Appeler maintenant
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div><div class="hstat-num" data-count="500">0</div><div class="hstat-label">Clients satisfaits</div></div>
+        <div><div class="hstat-num" data-count="3">0</div><div class="hstat-label">Ans d'expérience</div></div>
+        <div><div class="hstat-num">24h</div><div class="hstat-label">Délai intervention</div></div>
+        <div><div class="hstat-num">100<span style="color:var(--green2)">%</span></div><div class="hstat-label">Satisfaction garantie</div></div>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="hcard">
+        <div class="hcard-header">
+          <div class="hcard-icon" style="background:rgba(18,70,230,.25)">🛡️</div>
+          <div>
+            <div class="hcard-title">Protection active</div>
+            <div class="hcard-sub">Kaspersky · Windows Defender</div>
+          </div>
+        </div>
+        <div class="hcard-bar"><div class="hcard-fill" style="width:95%;background:linear-gradient(90deg,var(--green),var(--green2))"></div></div>
+        <div class="hcard-row"><span>Score de sécurité</span><span style="color:var(--green2);font-weight:700">95%</span></div>
+      </div>
+      <div class="hcard">
+        <div class="hcard-header">
+          <div class="hcard-icon" style="background:rgba(99,102,241,.25)">🌐</div>
+          <div>
+            <div class="hcard-title">Site web professionnel</div>
+            <div class="hcard-sub">Responsive · SEO · Rapide</div>
+          </div>
+        </div>
+        <div class="tag-row">
+          <span class="htag">HTML/CSS</span>
+          <span class="htag">SEO</span>
+          <span class="htag">Mobile-first</span>
+          <span class="htag">Rapide</span>
+        </div>
+      </div>
+      <div class="hcard">
+        <div class="hcard-header">
+          <div class="hcard-icon" style="background:rgba(245,158,11,.2)">⚡</div>
+          <div>
+            <div class="hcard-title">Performance PC</div>
+            <div class="hcard-sub">Avant / Après intervention</div>
+          </div>
+        </div>
+        <div class="hcard-bar" style="margin-bottom:7px">
+          <div class="hcard-fill" style="width:30%;background:rgba(239,68,68,.6)"></div>
+        </div>
+        <div class="hcard-bar">
+          <div class="hcard-fill" style="width:92%;background:linear-gradient(90deg,#3B82F6,#8B5CF6)"></div>
+        </div>
+        <div class="hcard-row"><span>Avant</span><span>Après</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ STATS ═══ -->
+<div class="stats-strip">
+  <div class="stats-inner">
+    <div class="stat-cell reveal"><div class="stat-cell-num">500<span>+</span></div><div class="stat-cell-label">Clients servis</div></div>
+    <div class="stat-cell reveal"><div class="stat-cell-num">3<span>+</span></div><div class="stat-cell-label">Années d'expertise</div></div>
+    <div class="stat-cell reveal"><div class="stat-cell-num">24<span>h</span></div><div class="stat-cell-label">Délai moyen d'intervention</div></div>
+    <div class="stat-cell reveal"><div class="stat-cell-num">100<span>%</span></div><div class="stat-cell-label">Satisfaction garantie</div></div>
+  </div>
+</div>
+
+<!-- ═══ SERVICES ═══ -->
+<section class="section" id="services" style="background:var(--surface)">
+  <div class="section-inner">
+    <div class="s-header reveal">
+      <div class="s-eyebrow">Nos services</div>
+      <h2 class="s-title">Tout ce dont vous <span>avez besoin</span></h2>
+      <p class="s-desc">Des solutions informatiques complètes pour particuliers et entreprises au Burkina Faso.</p>
+    </div>
+    <div class="svc-grid">
+      <div class="svc reveal"><div class="svc-num">01</div><div class="svc-icon i1">🔧</div><h3>Maintenance Informatique</h3><ul class="svc-list"><li>Diagnostic et réparation de pannes</li><li>Optimisation des performances</li><li>Dépannage à domicile ou à distance</li><li>Nettoyage physique &amp; logiciel</li></ul><a href="#contact" class="svc-link">Demander →</a></div>
+      <div class="svc reveal"><div class="svc-num">02</div><div class="svc-icon i2">⚙️</div><h3>Installation &amp; Configuration</h3><ul class="svc-list"><li>Installation Windows (toutes versions)</li><li>Logiciels professionnels &amp; Office</li><li>Activation, drivers et mises à jour</li><li>Configuration réseau &amp; imprimante</li></ul><a href="#contact" class="svc-link">Demander →</a></div>
+      <div class="svc reveal"><div class="svc-num">03</div><div class="svc-icon i3">🛡️</div><h3>Cybersécurité</h3><ul class="svc-list"><li>Installation antivirus (Kaspersky, etc.)</li><li>Protection virus, malwares, phishing</li><li>Sécurisation des données sensibles</li><li>Audit sécurité &amp; pare-feu</li></ul><a href="#contact" class="svc-link">Demander →</a></div>
+      <div class="svc reveal"><div class="svc-num">04</div><div class="svc-icon i4">🌐</div><h3>Création de Sites Web</h3><ul class="svc-list"><li>Sites vitrines modernes &amp; professionnels</li><li>Design responsive &amp; mobile-first</li><li>Optimisation SEO incluse</li><li>Hébergement &amp; maintenance</li></ul><a href="#contact" class="svc-link">Demander →</a></div>
+      <div class="svc reveal"><div class="svc-num">05</div><div class="svc-icon i5">🖥️</div><h3>Vente de Matériel</h3><ul class="svc-list"><li>Ordinateurs portables &amp; de bureau</li><li>Accessoires &amp; périphériques</li><li>Matériel neuf et reconditionné</li><li>Garantie &amp; support après-vente</li></ul><a href="#produits" class="svc-link">Voir boutique →</a></div>
+      <div class="svc svc-dark reveal">
+        <div class="svc-num" style="color:rgba(255,255,255,.25)">06</div>
+        <div class="svc-icon" style="background:rgba(255,255,255,.08);font-size:24px">💡</div>
+        <h3 style="color:#fff">Un projet sur mesure ?</h3>
+        <p class="svc-dark-desc">Chaque situation est unique. Contactez-nous pour une consultation gratuite et un devis sans engagement.</p>
+        <a href="#contact" class="btn-hero-primary btn-sm">Consultation gratuite →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ WHY ═══ -->
+<section class="section" id="why">
+  <div class="section-inner">
+    <div class="why-layout">
+      <div class="reveal-left">
+        <div class="s-eyebrow">Pourquoi nous</div>
+        <h2 class="s-title">Ce qui nous <span>distingue</span></h2>
+        <p class="s-desc">Nous ne faisons pas que résoudre des problèmes — nous construisons des relations de confiance durables.</p>
+        <div class="why-nums">
+          <div class="wnum"><div class="wnum-val" data-count="500">0</div><div class="wnum-lbl">Clients satisfaits</div></div>
+          <div class="wnum"><div class="wnum-val"><span data-count="24">0</span>h</div><div class="wnum-lbl">Délai moyen</div></div>
+          <div class="wnum"><div class="wnum-val">30j</div><div class="wnum-lbl">Garantie incluse</div></div>
+          <div class="wnum"><div class="wnum-val">7j/7</div><div class="wnum-lbl">Disponibilité</div></div>
+        </div>
+      </div>
+      <div class="why-features reveal-right">
+        <div class="wf"><div class="wf-icon" style="background:#EEF2FF">⚡</div><div><h4>Intervention ultra-rapide</h4><p>Réponse en moins de 2h, intervention le jour même pour les urgences.</p></div></div>
+        <div class="wf"><div class="wf-icon" style="background:var(--green-light)">💰</div><div><h4>Tarifs transparents</h4><p>Pas de mauvaise surprise. Devis clair avant toute intervention.</p></div></div>
+        <div class="wf"><div class="wf-icon" style="background:#FFF7ED">🎓</div><div><h4>Expertise certifiée</h4><p>Plus de 3 ans d'expérience, des centaines de clients satisfaits.</p></div></div>
+        <div class="wf"><div class="wf-icon" style="background:#F0FDF4">✅</div><div><h4>Satisfaction garantie</h4><p>Garantie 30 jours. Si le problème revient, on revient gratuitement.</p></div></div>
+        <div class="wf"><div class="wf-icon" style="background:#EFF6FF">🏠</div><div><h4>Déplacement à domicile</h4><p>On se déplace chez vous ou en entreprise, à votre convenance.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ TARIFS ═══ -->
+<section class="section" id="tarifs" style="background:var(--ink)">
+  <div class="section-inner">
+    <div class="s-header reveal">
+      <div class="s-eyebrow s-eyebrow-dark">Tarification</div>
+      <h2 class="s-title" style="color:#fff">Des prix clairs, <span style="color:#60A5FA">sans surprises</span></h2>
+      <p class="s-desc" style="color:rgba(255,255,255,.45)">Devis personnalisé gratuit. Nous nous adaptons à votre budget.</p>
+    </div>
+    <div class="pricing-grid">
+      <div class="pcard reveal">
+        <div class="pcard-icon">🔧</div>
+        <div class="pcard-name">Services de base</div>
+        <div class="pcard-price">2 000 <small>FCFA</small></div>
+        <div class="pcard-desc">À partir de · Interventions simples</div>
+        <ul class="pcard-features"><li>Diagnostic rapide</li><li>Nettoyage système</li><li>Conseil &amp; support</li><li>Installation logiciel simple</li></ul>
+        <a href="#contact" class="pcard-btn pcard-btn-o">Nous contacter</a>
+      </div>
+      <div class="pcard popular reveal">
+        <div class="pop-badge">⭐ Populaire</div>
+        <div class="pcard-icon">🛡️</div>
+        <div class="pcard-name">Services avancés</div>
+        <div class="pcard-price">15 000 <small>FCFA</small></div>
+        <div class="pcard-desc">À partir de · Interventions complètes</div>
+        <ul class="pcard-features"><li>Installation Windows complète</li><li>Antivirus + sécurité configurée</li><li>Optimisation performance totale</li><li>Support 30 jours inclus</li></ul>
+        <a href="https://wa.me/22655757299?text=Bonjour%20LAMIEN%20DIGITAL%2C%20je%20souhaite%20un%20devis%20service%20avanc%C3%A9." target="_blank" class="pcard-btn pcard-btn-s">💬 Devis WhatsApp</a>
+      </div>
+      <div class="pcard reveal">
+        <div class="pcard-icon">🌐</div>
+        <div class="pcard-name">Création Web</div>
+        <div class="pcard-price">Sur <small>devis</small></div>
+        <div class="pcard-desc">Personnalisé · Adapté à votre projet</div>
+        <ul class="pcard-features"><li>Site vitrine professionnel</li><li>Design responsive &amp; moderne</li><li>SEO optimisé dès le départ</li><li>Hébergement &amp; maintenance</li></ul>
+        <a href="#contact" class="pcard-btn pcard-btn-o">Demander un devis</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ PRODUITS ═══ -->
+<section class="section" id="produits" style="background:var(--surface)">
+  <div class="section-inner">
+    <div class="s-header reveal">
+      <div class="s-eyebrow">Notre boutique</div>
+      <h2 class="s-title">Matériel informatique <span>de qualité</span></h2>
+      <p class="s-desc">Ordinateurs, accessoires neufs et reconditionnés. Livraison disponible à Ouagadougou.</p>
+    </div>
+    <div class="filter-row reveal">
+      <button class="fb on" onclick="filterProd(this,'all')">Tout voir</button>
+      <button class="fb" onclick="filterProd(this,'laptop')">💻 Laptops</button>
+      <button class="fb" onclick="filterProd(this,'desktop')">🖥️ Desktops</button>
+      <button class="fb" onclick="filterProd(this,'accessoire')">🖱️ Accessoires</button>
+    </div>
+    <div class="prod-grid">
+      <div class="prd reveal" data-cat="laptop">
+        <div class="prd-thumb" style="background:linear-gradient(135deg,#EEF2FF,#E0E7FF)">💻<span class="prd-badge b-stock">Déstock</span></div>
+        <div class="prd-body"><div class="prd-name">Dell Latitude · Core i5</div><p class="prd-spec">Intel Core i5 8e gen · 8GB RAM · SSD 256GB · Windows 11</p><div class="prd-price">150 000 FCFA</div>
+          <div class="prd-details" id="d1"><ul class="prd-spec-list"><li>Processeur : Intel Core i5 8e génération</li><li>RAM : 8GB DDR4</li><li>Stockage : SSD 256GB</li><li>Écran : 14 pouces HD</li><li>Système : Windows 11 Pro</li><li>Batterie : 4–5h d'autonomie</li></ul></div>
+          <div class="prd-actions"><button class="prd-detail-btn" onclick="toggleDet(this,'d1')">Détails <span class="arr">▾</span></button><a class="prd-buy-btn" href="https://wa.me/22655757299?text=Bonjour%20LAMIEN%20DIGITAL%2C%20int%C3%A9ress%C3%A9%20par%20Dell%20Latitude%20i5%20150%20000%20FCFA." target="_blank">🛒 Acheter</a></div>
+        </div>
+      </div>
+      <div class="prd reveal" data-cat="laptop">
+        <div class="prd-thumb" style="background:linear-gradient(135deg,#F5F3FF,#EDE9FE)">🖥️<span class="prd-badge b-promo">Promo</span></div>
+        <div class="prd-body"><div class="prd-name">Dell Latitude 5490 · Core i7</div><p class="prd-spec">Intel Core i7 · 16GB RAM · SSD 512GB · Windows 10 Pro</p><div class="prd-price">275 000 FCFA</div>
+          <div class="prd-details" id="d2"><ul class="prd-spec-list"><li>Processeur : Intel Core i7 7e génération</li><li>RAM : 16GB DDR4</li><li>Stockage : SSD 512GB</li><li>Écran : 14 pouces Full HD</li><li>Système : Windows 10 Pro</li><li>Batterie : 6–7h d'autonomie</li></ul></div>
+          <div class="prd-actions"><button class="prd-detail-btn" onclick="toggleDet(this,'d2')">Détails <span class="arr">▾</span></button><a class="prd-buy-btn" href="https://wa.me/22655757299?text=Bonjour%20LAMIEN%20DIGITAL%2C%20int%C3%A9ress%C3%A9%20par%20Dell%20Latitude%205490%20275%20000%20FCFA." target="_blank">🛒 Acheter</a></div>
+        </div>
+      </div>
+      <div class="prd reveal" data-cat="laptop">
+        <div class="prd-thumb" style="background:linear-gradient(135deg,#ECFDF5,#D1FAE5)">💼<span class="prd-badge b-new">Neuf</span></div>
+        <div class="prd-body"><div class="prd-name">HP EliteBook 840</div><p class="prd-spec">Intel Core i5 · 8GB RAM · 1TB HDD · Windows 11</p><div class="prd-price">160 000 FCFA</div>
+          <div class="prd-details" id="d3"><ul class="prd-spec-list"><li>Processeur : Intel Core i5</li><li>RAM : 8GB DDR4</li><li>Stockage : 1TB HDD</li><li>Écran : 14 pouces Full HD</li><li>Système : Windows 11</li><li>Batterie : 5h d'autonomie</li></ul></div>
+          <div class="prd-actions"><button class="prd-detail-btn" onclick="toggleDet(this,'d3')">Détails <span class="arr">▾</span></button><a class="prd-buy-btn" href="https://wa.me/22655757299?text=Bonjour%20LAMIEN%20DIGITAL%2C%20int%C3%A9ress%C3%A9%20par%20HP%20EliteBook%20840%20160%20000%20FCFA." target="_blank">🛒 Acheter</a></div>
+        </div>
+      </div>
+      <div class="prd reveal" data-cat="desktop">
+        <div class="prd-thumb" style="background:linear-gradient(135deg,#EFF6FF,#DBEAFE)">🖥️<span class="prd-badge b-new">Neuf</span></div>
+        <div class="prd-body"><div class="prd-name">HP ProDesk 400 G6</div><p class="prd-spec">Intel Core i5 9e gen · 8GB RAM · SSD 256GB · Windows 11</p><div class="prd-price">120 000 FCFA</div>
+          <div class="prd-details" id="d4"><ul class="prd-spec-list"><li>Processeur : Intel Core i5 9e génération</li><li>RAM : 8GB DDR4</li><li>Stockage : SSD 256GB</li><li>Graphique : Intel UHD 630</li><li>Système : Windows 11 Pro</li><li>Ports : USB 3.0 · HDMI · VGA</li></ul></div>
+          <div class="prd-actions"><button class="prd-detail-btn" onclick="toggleDet(this,'d4')">Détails <span class="arr">▾</span></button><a class="prd-buy-btn" href="https://wa.me/22655757299?text=Bonjour%20LAMIEN%20DIGITAL%2C%20int%C3%A9ress%C3%A9%20par%20HP%20ProDesk%20120%20000%20FCFA." target="_blank">🛒 Acheter</a></div>
+        </div>
+      </div>
+      <div class="prd reveal" data-cat="accessoire">
+        <div class="prd-thumb" style="background:linear-gradient(135deg,#F0FDF4,#DCFCE7)">💾</div>
+        <div class="prd-body"><div class="prd-name">SSD Interne 512GB M.2</div><p class="prd-spec">NVMe PCIe 3.0 · jusqu'à 3500 MB/s · Garantie 3 ans</p><div class="prd-price">35 000 FCFA</div>
+          <div class="prd-details" id="d5"><ul class="prd-spec-list"><li>Capacité : 512GB</li><li>Type : SSD M.2 NVMe</li><li>Lecture : jusqu'à 3500 MB/s</li><li>Interface : PCIe 3.0</li><li>Garantie : 3 ans constructeur</li><li>Compatible : tous ordinateurs récents</li></ul></div>
+          <div class="prd-actions"><button class="prd-detail-btn" onclick="toggleDet(this,'d5')">Détails <span class="arr">▾</span></button><a class="prd-buy-btn" href="https://wa.me/22655757299?text=Bonjour%20LAMIEN%20DIGITAL%2C%20int%C3%A9ress%C3%A9%20par%20SSD%20512GB%2035%20000%20FCFA." target="_blank">🛒 Acheter</a></div>
+        </div>
+      </div>
+      <div class="prd reveal" data-cat="accessoire">
+        <div class="prd-thumb" style="background:linear-gradient(135deg,#FFF7ED,#FEE5C5)">📦</div>
+        <div class="prd-body"><div class="prd-name">Disque Dur Externe 1TB</div><p class="prd-spec">USB 3.0 · Compatible PC &amp; Mac · Garantie 2 ans</p><div class="prd-price">35 000 FCFA</div>
+          <div class="prd-details" id="d6"><ul class="prd-spec-list"><li>Capacité : 1TB</li><li>Interface : USB 3.0</li><li>Vitesse : jusqu'à 400 MB/s</li><li>Compatible : Windows · Mac · Linux</li><li>Alimentation : via câble USB</li><li>Garantie : 2 ans constructeur</li></ul></div>
+          <div class="prd-actions"><button class="prd-detail-btn" onclick="toggleDet(this,'d6')">Détails <span class="arr">▾</span></button><a class="prd-buy-btn" href="https://wa.me/22655757299?text=Bonjour%20LAMIEN%20DIGITAL%2C%20int%C3%A9ress%C3%A9%20par%20Disque%20Externe%201TB%2035%20000%20FCFA." target="_blank">🛒 Acheter</a></div>
+        </div>
+      </div>
+      <div class="prd reveal" data-cat="accessoire">
+        <div class="prd-thumb" style="background:linear-gradient(135deg,#F5F3FF,#EDE9FE)">🖱️<span class="prd-badge b-new">Neuf</span></div>
+        <div class="prd-body"><div class="prd-name">Pack Clavier + Souris Sans Fil</div><p class="prd-spec">2.4GHz · Autonomie 12 mois · Silencieux</p><div class="prd-price">12 000 FCFA</div>
+          <div class="prd-details" id="d7"><ul class="prd-spec-list"><li>Connexion : Sans fil 2.4GHz</li><li>Portée : jusqu'à 10 mètres</li><li>Autonomie clavier : 12 mois</li><li>Autonomie souris : 18 mois</li><li>DPI souris : 1000/1500/2000</li><li>Compatible : Windows · Mac · Linux</li></ul></div>
+          <div class="prd-actions"><button class="prd-detail-btn" onclick="toggleDet(this,'d7')">Détails <span class="arr">▾</span></button><a class="prd-buy-btn" href="https://wa.me/22655757299?text=Bonjour%20LAMIEN%20DIGITAL%2C%20int%C3%A9ress%C3%A9%20par%20Pack%20Clavier%20Souris%2012%20000%20FCFA." target="_blank">🛒 Acheter</a></div>
+        </div>
+      </div>
+      <div class="prd reveal" data-cat="accessoire">
+        <div class="prd-thumb" style="background:linear-gradient(135deg,#ECFDF5,#D1FAE5)">🔌</div>
+        <div class="prd-body"><div class="prd-name">Support Laptop Aluminium + Ventilo</div><p class="prd-spec">Réglable · Aluminium · USB · Compatible 10"–17"</p><div class="prd-price">15 000 FCFA</div>
+          <div class="prd-details" id="d8"><ul class="prd-spec-list"><li>Matériau : Alliage d'aluminium</li><li>Hauteur : 5 niveaux réglables</li><li>Ventilateur intégré USB</li><li>Compatible : laptops 10" à 17"</li><li>Poids max : 15kg</li><li>Hub USB supplémentaire inclus</li></ul></div>
+          <div class="prd-actions"><button class="prd-detail-btn" onclick="toggleDet(this,'d8')">Détails <span class="arr">▾</span></button><a class="prd-buy-btn" href="https://wa.me/22655757299?text=Bonjour%20LAMIEN%20DIGITAL%2C%20int%C3%A9ress%C3%A9%20par%20Support%20Laptop%2015%20000%20FCFA." target="_blank">🛒 Acheter</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="prod-more reveal">
+      <p>Vous cherchez un produit non listé ?</p>
+      <a href="https://wa.me/22655757299?text=Bonjour%20LAMIEN%20DIGITAL%2C%20je%20cherche%20un%20produit%20sp%C3%A9cifique." target="_blank" class="btn-hero-primary">💬 Demander sur WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ GALERIE ═══ -->
+<section class="section" id="realisations">
+  <div class="section-inner">
+    <div class="s-header reveal">
+      <div class="s-eyebrow">Nos réalisations</div>
+      <h2 class="s-title">Projets <span>accomplis</span></h2>
+      <p class="s-desc">Un aperçu de nos interventions et créations pour nos clients.</p>
+    </div>
+    <div class="gal-grid">
+      <div class="gal-card gc1 reveal"><div class="gal-emo">🌐</div><div class="gal-overlay"><h4>Site e-commerce</h4><p>Boutique en ligne · Ouagadougou</p></div></div>
+      <div class="gal-card gc2 reveal"><div class="gal-emo">🛡️</div><div class="gal-overlay"><h4>Audit cybersécurité</h4><p>PME · 20 postes sécurisés</p></div></div>
+      <div class="gal-card gc3 reveal"><div class="gal-emo">💻</div><div class="gal-overlay"><h4>Parc informatique</h4><p>Configuration &amp; déploiement</p></div></div>
+      <div class="gal-card gc4 reveal"><div class="gal-emo">🏥</div><div class="gal-overlay"><h4>Site vitrine</h4><p>Cabinet médical · Bobo-Dioulasso</p></div></div>
+      <div class="gal-card gc5 reveal"><div class="gal-emo">🔧</div><div class="gal-overlay"><h4>Maintenance parc</h4><p>ONG · 35 machines réparées</p></div></div>
+      <div class="gal-card gc6 reveal"><div class="gal-emo">📊</div><div class="gal-overlay"><h4>Application web</h4><p>Gestion de stock entreprise</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ TÉMOIGNAGES ═══ -->
+<section class="section" id="temoignages" style="background:var(--surface)">
+  <div class="section-inner">
+    <div class="s-header reveal">
+      <div class="s-eyebrow">Témoignages</div>
+      <h2 class="s-title">Ce que disent <span>nos clients</span></h2>
+      <p class="s-desc">La confiance de nos clients est notre meilleure référence.</p>
+    </div>
+    <div class="testi-grid">
+      <div class="testi reveal">
+        <div class="testi-stars"><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div></div>
+        <p class="testi-text">« Service impeccable ! Mon ordinateur a été réparé en moins de 24h. Très professionnel et prix raisonnable. »</p>
+        <div class="testi-footer"><div class="testi-av" style="background:linear-gradient(135deg,#1246E6,#6366F1)">AK</div><div><div class="testi-name">Abdoulaye Kaboré</div><div class="testi-role">Commerçant · Ouagadougou</div></div></div>
+      </div>
+      <div class="testi reveal">
+        <div class="testi-stars"><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div></div>
+        <p class="testi-text">« LAMIEN DIGITAL a créé mon site en un temps record. Design moderne et bien référencé sur Google. Excellent ! »</p>
+        <div class="testi-footer"><div class="testi-av" style="background:linear-gradient(135deg,#059669,#10B981)">FT</div><div><div class="testi-name">Fatimata Traoré</div><div class="testi-role">Gérante de salon · Koudougou</div></div></div>
+      </div>
+      <div class="testi reveal">
+        <div class="testi-stars"><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div></div>
+        <p class="testi-text">« Nos 15 postes sont sécurisés et optimisés. Équipe réactive, compétente et sérieuse. On refait appel à eux ! »</p>
+        <div class="testi-footer"><div class="testi-av" style="background:linear-gradient(135deg,#1E40AF,#3B82F6)">IS</div><div><div class="testi-name">Ibrahim Sawadogo</div><div class="testi-role">Directeur · ONG Ouagadougou</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FAQ ═══ -->
+<section class="section" id="faq">
+  <div class="section-inner">
+    <div class="faq-cols">
+      <div class="faq-left reveal-left">
+        <div class="s-eyebrow">FAQ</div>
+        <h2 class="s-title">Questions <span>fréquentes</span></h2>
+        <p class="s-desc">Des questions ? Contactez-nous directement, on répond en moins de 2h.</p>
+        <a href="https://wa.me/22655757299?text=Bonjour%20LAMIEN%20DIGITAL%2C%20j%27ai%20une%20question." target="_blank" class="faq-cta">💬 Poser une question →</a>
+      </div>
+      <div class="faq-list reveal-right">
+        <div class="faq-item"><button class="faq-q" onclick="tFaq(this)">Intervenez-vous à domicile ?<span class="faq-icon">+</span></button><div class="faq-answer"><p>Oui, nous nous déplaçons à domicile ou en entreprise à Ouagadougou. Assistance à distance disponible également.</p></div></div>
+        <div class="faq-item"><button class="faq-q" onclick="tFaq(this)">Quels sont vos délais d'intervention ?<span class="faq-icon">+</span></button><div class="faq-answer"><p>Pour les urgences, 2 à 4 heures. Pour les projets web, un planning précis est établi avec vous dès le départ.</p></div></div>
+        <div class="faq-item"><button class="faq-q" onclick="tFaq(this)">Proposez-vous une garantie ?<span class="faq-icon">+</span></button><div class="faq-answer"><p>Toutes nos interventions sont garanties 30 jours. Si le problème revient, nous revenons gratuitement.</p></div></div>
+        <div class="faq-item"><button class="faq-q" onclick="tFaq(this)">Comment obtenir un devis gratuit ?<span class="faq-icon">+</span></button><div class="faq-answer"><p>Via le formulaire de contact, par appel ou sur WhatsApp au +226 55 75 72 99. Gratuit &amp; sans engagement.</p></div></div>
+        <div class="faq-item"><button class="faq-q" onclick="tFaq(this)">Vendez-vous du matériel reconditionné ?<span class="faq-icon">+</span></button><div class="faq-answer"><p>Oui. Chaque appareil est rigoureusement testé et certifié avant la vente. Garantie incluse.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CONTACT ═══ -->
+<section class="section section-dark" id="contact">
+  <div class="section-inner">
+    <div class="s-header reveal">
+      <div class="s-eyebrow s-eyebrow-dark">Contact</div>
+      <h2 class="s-title" style="color:#fff">Parlons de votre <span style="color:#60A5FA">projet</span></h2>
+      <p class="s-desc" style="color:rgba(255,255,255,.45)">Disponibles 7j/7 · Réponse garantie sous 2h</p>
+    </div>
+    <div class="contact-cols">
+      <!-- Infos -->
+      <div class="reveal-left">
+        <div class="cinfo-cards">
+          <div class="ci">
+            <div class="ci-ico">📱</div>
+            <div>
+              <div class="ci-lbl">Téléphone &amp; WhatsApp</div>
+              <a class="ci-val" href="tel:+22655757299">+226 55 75 72 99</a>
+            </div>
+          </div>
+          <div class="ci">
+            <div class="ci-ico">📍</div>
+            <div>
+              <div class="ci-lbl">Localisation</div>
+              <span class="ci-val">Ouagadougou, Burkina Faso</span>
+            </div>
+          </div>
+          <div class="ci">
+            <div class="ci-ico">⏰</div>
+            <div>
+              <div class="ci-lbl">Disponibilité</div>
+              <span class="ci-val">Lun – Sam · 7h30 – 19h00</span>
+            </div>
+          </div>
+          <div class="ci">
+            <div class="ci-ico">✉️</div>
+            <div>
+              <div class="ci-lbl">Email</div>
+              <span class="ci-val">lamiendonaldo179@gmail.com</span>
+            </div>
+          </div>
+        </div>
+        <a class="wa-cta" href="https://wa.me/22655757299?text=Bonjour%20LAMIEN%20DIGITAL%2C%20je%20souhaite%20un%20devis." target="_blank">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+          </svg>
+          Contacter sur WhatsApp
+        </a>
+      </div>
+
+      <!-- Formulaire -->
+      <div class="cform-box reveal-right">
+        <div class="cform-title">✉️ Envoyer un message</div>
+
+        <!-- Message de succès (caché par défaut) -->
+        <div id="formOk" class="form-ok" style="display:none">
+          ✅ Votre message a été envoyé sur WhatsApp !<br>
+          <small>Nous vous répondons sous 2h maximum.</small>
+        </div>
+
+        <!-- Formulaire -->
+        <div id="cForm">
+          <div class="fg">
+            <label for="fn">Nom complet *</label>
+            <input type="text" id="fn" placeholder="Ex : Moussa Traoré" required/>
+          </div>
+          <div class="fg">
+            <label for="fp">Téléphone / WhatsApp *</label>
+            <input type="tel" id="fp" placeholder="+226 70 00 00 00" required/>
+          </div>
+          <div class="fg">
+            <label for="fs">Service souhaité</label>
+            <select id="fs">
+              <option value="">-- Sélectionner un service --</option>
+              <option value="Maintenance informatique">🔧 Maintenance informatique</option>
+              <option value="Installation systèmes">⚙️ Installation systèmes</option>
+              <option value="Cybersécurité">🛡️ Cybersécurité</option>
+              <option value="Création de site web">🌐 Création de site web</option>
+              <option value="Achat de matériel">🖥️ Achat de matériel</option>
+              <option value="Autre">💡 Autre</option>
+            </select>
+          </div>
+          <div class="fg">
+            <label for="fm">Message *</label>
+            <textarea id="fm" placeholder="Décrivez votre besoin ou problème en détail..." required></textarea>
+          </div>
+          <button class="csub" id="submitBtn" onclick="sendForm()">
+            <span id="btnText">Envoyer sur WhatsApp →</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="fbrand">
+        <div class="logo">
+          <div class="logo-mark">LD</div>
+          <div class="logo-name" style="color:#fff">LAMIEN <span>DIGITAL</span></div>
+        </div>
+        <p>Expert en solutions informatiques au Burkina Faso. Rapide, fiable et accessible.</p>
+        <div class="fbrand-soc">
+          <a href="#" class="fsoc">📘</a>
+          <a href="https://wa.me/22655757299" class="fsoc" target="_blank">💬</a>
+          <a href="#" class="fsoc">📸</a>
+          <a href="#" class="fsoc">💼</a>
+        </div>
+      </div>
+      <div class="fcol">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="#services">Maintenance informatique</a></li>
+          <li><a href="#services">Installation systèmes</a></li>
+          <li><a href="#services">Cybersécurité</a></li>
+          <li><a href="#services">Création web</a></li>
+          <li><a href="#produits">Vente matériel</a></li>
+        </ul>
+      </div>
+      <div class="fcol">
+        <h5>Navigation</h5>
+        <ul>
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="#produits">Boutique</a></li>
+          <li><a href="#temoignages">Avis clients</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#realisations">Réalisations</a></li>
+        </ul>
+      </div>
+      <div class="fcol">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="tel:+22655757299">📱 +226 55 75 72 99</a></li>
+          <li><a href="https://wa.me/22655757299" target="_blank">💬 WhatsApp</a></li>
+          <li><a href="#contact">📝 Formulaire</a></li>
+          <li><a href="#tarifs">💰 Tarifs</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 LAMIEN DIGITAL · Tous droits réservés · Burkina Faso 🇧🇫</p>
+      <span>Fait avec ❤️ au Burkina Faso</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ═══ BOUTON WHATSAPP FLOTTANT ═══ -->
+<a href="https://wa.me/22655757299?text=Bonjour%20LAMIEN%20DIGITAL%2C%20j%27ai%20besoin%20d%27aide." class="wa-float" target="_blank" title="Contactez-nous sur WhatsApp">
+  <div class="wa-float-pulse"></div>
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="white">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
+</a>
+
+<!-- Bouton retour en haut -->
+<button class="scroll-tp" id="stb" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Retour en haut">↑</button>
+
+<script src="script.js"></script>
+</body>
+</html>
